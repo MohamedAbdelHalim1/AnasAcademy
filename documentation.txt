@@ -1,0 +1,20 @@
+Documentation:
+1/ install composer on pc and make sure to include php version in environment variables
+2/ open xampp or laragon or any other local server on your pc.
+3/ open the project in IDE 
+4/ unzip the vendor file.
+5/ run composer update --ignore-platform-reqs
+6/ run php artisan key:generate
+7/ run php artisam migrate
+8/ run php artisan serve
+9/ run touch test.sqlite   
+10/identitfy database to sqlite and uncomment database sqlite and database name :memory:
+11/ run php artisan test
+
+
+for stripe 
+we first require package via composer
+and make account in stripe page to get secret key you are using in your project
+and just follow instruction in stripe documentation till reach success function where you 
+change status of order to paid and send email contain invoice or whatever you want
+
